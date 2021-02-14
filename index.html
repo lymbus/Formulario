@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js" defer></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="principal">
+        <form action="#" method="post"class="form" >
+            <div class="form__datos">
+                <h2 class="form__h2">Datos personales</h2>
+                <ul class="form__ul">
+                    <li class="form__li">
+                        <label class="form__campos" for="nombre">Nombre</label>
+                        <input class="form__campos input" type="text"	name="nombre"	autocomplete="on" id="nombre"	 maxlength="30"	required>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="apellidos">Apellidos</label>
+                        <input class="form__campos input" type="text"	name="apellidos"	autocomplete="on" id="apellidos"	 maxlength="60"	required>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="dirección">Dirección</label>
+                        <input class="form__campos input" type="text"	name="dirección"	autocomplete="off" id="dirección"	 maxlength="60"	required>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="postal">Código Postal</label>
+                        <input class="form__campos input" type="text"	name="código postal"	autocomplete="off" id="postal"	 pattern="[0-9]{5}"	required>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="localidad">Localidad</label>
+                        <input class="form__campos input" type="text"	name="localidad"	autocomplete="off" id="localidad"	 required>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__datos">
+                <h2 class="form__h2">Tipo de contratación</h2>
+                <ul class="form__ul">
+                    <li class="form__li--contratacion">
+                        <div class="form__opciones">
+                            <label class="form__opcion" for="nueva">
+                                Nueva contratación
+                            </label>
+                            <input class="form__opcion" type="radio" name="contratacion" id="nueva">
+                        </div>
+                        <div class="form__opciones">
+                            <label class="form__opcion" for="portabilidad">
+                                Portabilidad
+                            </label>
+                            <input class="form__opcion" type="radio" name="contratacion" id="portabilidad">
+                        </div>
+                        <div class="form__opciones">
+                            <label class="form__opcion" for="cambio">
+                                Cambio de contratación
+                            </label>
+                            <input class="form__opcion" type="radio" name="contratacion" id="cambio">
+                        </div>
+                    </li>
+                    <li class="form__li--contratacion">
+                        <div class="form__opciones companias">
+                            <label class="form__opcion" for="compañia">Elija la compañia actual:</label>
+                            <select  class="form__opcion" name="compañia" id="compañia">
+                                <option value="Movistar">Movistar</option>
+                                <option value="Orange">Orange</option>
+                                <option value="Vodafone">Vodafone</option>
+                                <option value="Yoigo">Yoigo</option>
+                                <option value="No">No tengo ninguna compañia</option>
+                            </select>
+                        </div>
+                        <div class="form__opciones companias">
+                            <label class="form__opcion" for="nuevacompania">En caso de portabilidad, elija la nueva compañia:</label>
+                            <select class="form__opcion" id="nuevacompania" name="nuevacompania">
+                                <option value="Movistar">Movistar</option>
+                                <option value="Orange">Orange</option>
+                                <option value="Vodafone">Vodafone</option>
+                                <option value="Yoigo">Yoigo</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__datos">
+                <h2 class="form__h2">Datos bancarios</h2>
+                <ul class="form__ul">
+                    <li class="form__li">
+                        <label class="form__campos" for="pais">País:</label>
+                        <input class="form__campos input" type="text"	name="pais"	autocomplete="off" value="ES" readonly="readonly" id="pais" required>
+                        <span>(Solo válido ES)</span>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="IBAN">Control IBAN:</label>
+                        <input class="form__campos input" type="text"	name="IBAN"	autocomplete="off" placeholder="XX" maxlength="2"	pattern="[0-9]{2}" id="IBAN" required>
+                        <span>(Dos dígitos)</span>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="entidad">Entidad:</label>
+                        <input class="form__campos input" type="text"	name="entidad"	autocomplete="off" placeholder="XXXX" maxlength="4" pattern="[0-9]{4}" id="entidad" required>
+                        <span>(Cuatro dígitos)</span>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="sucursal">Sucursal:</label>
+                        <input class="form__campos input" type="text"	name="sucursal"	autocomplete="off" placeholder="XXXX" maxlength="4" pattern="[0-9]{4}" id="sucursal" required>
+                        <span>(Cuatro dígitos)</span>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="DC">DC:</label>
+                        <input class="form__campos input" type="text"	name="DC"	autocomplete="off" placeholder="XX" maxlength="2" pattern="[0-9]{2}" id="DC" required>
+                        <span>(Dos dígitos)</span>
+                    </li>
+                    <li class="form__li">
+                        <label class="form__campos" for="Cuenta">Cuenta:</label>
+                        <input class="form__campos input" type="text"	name="Cuenta"	autocomplete="off" placeholder="XXXXXXXXX" maxlength="10" pattern="[0-9]{10}"  id="Cuenta" required>
+                        <span>(Diez dígitos)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__datos ">
+                <h2 class="form__h2">Datos estadísticos-¿Cómo nos conoció?</h2>
+                <ul class="form__ul estadisticas">
+                    <li class="form__li--checkbox">
+                        <input type="checkbox" name="TV" id="TV">
+                        <label for="TV">
+                            A través de la TV
+                        </label>
+                    </li>
+                    <li class="form__li--checkbox">
+                        <input type="checkbox" name="rrss" id="red">
+                        <label for="red">
+                            A través de redes sociales
+                        </label>
+                    </li>
+                    <li class="form__li--checkbox">
+                        <input type="checkbox" name="Otros" id="otros">
+                        <label for="otros">
+                            Otros
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__datos final">
+                <div class="form__valor">
+                    <input type="range" name="valoración" value="1" min="1" max="5" id="valoracion">
+                    <label class="form__valoracion" for="valoracion">
+                        <div class="form__resultado">1</div> 
+                        Valoración(1-5)
+                    </label>   
+                </div>
+                <div class="form__valor">
+                    <input type="date" name="fecha" value="2019-01-01" min="1" max="5" id="fecha">   
+                    <label for="fecha">
+                        Fecha de la encuesta:
+                    </label>   
+                </div>
+                <div class="form__botones">
+                    <div class="form__mostrar">
+                        <button class="form__boton" id="mo_v">Mostrar valoración</button>
+                        <p class="form__p"></p>
+                    </div>
+                    <div class="form__mostrar">
+                        <button class="form__boton" id="mo_c">Mostrar cuenta</button>
+                        <p class="form__p"></p>
+                    </div>
+                    <div class="form__mostrar">
+                        <button class="form__boton" id="mo_f">Mostrar día semana</button>
+                        <p class="form__p"></p>
+                    </div>
+                </div>
+                <div class="form__botones">
+                    <input class="form__boton" type="submit" value="Registrar" id="re">
+                    <input class="form__boton" type="reset" value="Borrar datos">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
