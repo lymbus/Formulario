@@ -4,16 +4,16 @@ Formulario web responsive realizado con HTML5,CSS y Typescript como tercera prá
 
 ## Construido con 🛠️:
 
- *HTML5.
- *Sass.
- *Typescript.
+ -HTML5.
+ -Sass.
+ -Typescript.
 
- *Visual Studio Code.
- *Prepros.
- *Git.
+ -Visual Studio Code.
+ -Prepros.
+ -Git.
  
 ## Contacto: 
- *[Github](https://github.com/lymbus)
+ -[Github](https://github.com/lymbus)
  
 ## Agradecimientos:
- *[Bejob](https://www.bejob.com/)
+ -[Bejob](https://www.bejob.com/)
