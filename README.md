@@ -5,8 +5,11 @@ Formulario web responsive realizado con HTML5,CSS y Typescript como tercera prá
 ## Construido con 🛠️:
 
  -HTML5.
+ 
  -Sass.
+ 
  -Typescript.
+ 
 
  -Visual Studio Code.
  -Prepros.
