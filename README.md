@@ -12,7 +12,9 @@ Formulario web responsive realizado con HTML5,CSS y Typescript como tercera prá
  
 
  -Visual Studio Code.
+ 
  -Prepros.
+ 
  -Git.
  
 ## Contacto: 
