@@ -1,16 +1,15 @@
 # Formulario
 
-Formulario web responsive realizado con HTML5,CSS y Typescript como tercera práctica del curso.
+Formulario web responsive realizado con HTML5,Sass y Typescript como tercera práctica del curso.
 
 ## Construido con 🛠️:
 
  -HTML5.
  
- -Sass.
+ -Sass + Metodología BEM
  
  -Typescript.
  
-
  -Visual Studio Code.
  
  -Prepros.
@@ -18,8 +17,15 @@ Formulario web responsive realizado con HTML5,CSS y Typescript como tercera prá
  -Git.
  
 ## Contacto: 
- -[Github](https://github.com/lymbus)
+
+ -[GitHub](https://github.com/lymbus)
  
+ -[LinkedIn](https://www.linkedin.com/in/lydia-est%C3%A9vez-chamorro/)
+ 
+##Licencia🧾:
+
+-MIT
+
 ## Agradecimientos:
  -[Bejob](https://www.bejob.com/)
  -[Woman4IT](https://women4it.eu/)
